@@ -1,0 +1,29 @@
+.header {
+	background: #4a90e2;
+	font-family: Roboto;
+
+	.navbar {
+		display: flex;
+		width: 620px;
+		margin: 0 auto;
+
+		.nav-item {
+			width: 33.33%;
+			padding: 16px 0 11px;
+			font-size: 24px;
+			font-weight: bold;
+			color: #ffffff;
+			text-align: center;
+			cursor: pointer;
+			user-select: none;
+
+			&:hover {
+				background: #3a81d3;
+			}
+
+			&.active {
+				border-bottom: 5px solid #00408b;
+			}
+		}
+	}
+}

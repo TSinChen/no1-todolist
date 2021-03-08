@@ -1,0 +1,13 @@
+export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
+export const ADD_TASK_CLICK = 'ADD_TASK_CLICK';
+export const ADD_TASK_CANCEL = 'ADD_TASK_CANCEL';
+export const NEW_TASK_CHANGE = 'NEW_TASK_CHANGE';
+export const NEW_TASK_STAR_CHANGE = 'NEW_TASK_STAR_CHANGE';
+export const ADD_NEW_TASK = 'ADD_NEW_TASK';
+export const SET_TASK_STAR = 'SET_TASK_STAR';
+export const OPEN_EDIT_TASK = 'OPEN_EDIT_TASK';
+export const CLOSE_EDIT_TASK = 'CLOSE_EDIT_TASK';
+export const EDIT_TASK_DETAIL = 'EDIT_TASK_DETAIL';
+export const SAVE_EDIT_TASK = 'SAVE_EDIT_TASK';
+export const CHANGE_TASK_CHECK = 'CHANGE_TASK_CHECK';
+export const ORDER_TASK = 'ORDER_TASK';
