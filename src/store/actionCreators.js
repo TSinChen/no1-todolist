@@ -82,3 +82,10 @@ export const orderTasks = () => {
 		type: constants.ORDER_TASK,
 	};
 };
+
+export const setTasks = (tasks)=>{
+	return {
+		type: constants.SET_TASKS,
+		tasks
+	}
+}

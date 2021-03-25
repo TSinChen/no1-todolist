@@ -12,22 +12,22 @@ const defaultState = {
 		checked: false,
 	},
 	tasks: [
-		{
-			title: 'Test 1',
-			deadlineDate: '2021-03-20',
-			deadlineTime: '00:00',
-			comment: 'TEST',
-			checked: false,
-		},
-		{
-			title: 'Test 2',
-			comment: 'TEST',
-			checked: true,
-		},
-		{
-			title: 'Test 3',
-			checked: false,
-		},
+		// {
+		// 	title: 'Test 1',
+		// 	deadlineDate: '2021-03-20',
+		// 	deadlineTime: '00:00',
+		// 	comment: 'TEST',
+		// 	checked: false,
+		// },
+		// {
+		// 	title: 'Test 2',
+		// 	comment: 'TEST',
+		// 	checked: true,
+		// },
+		// {
+		// 	title: 'Test 3',
+		// 	checked: false,
+		// },
 	],
 	editingTaskDetail: {},
 };
@@ -278,6 +278,11 @@ export default (state = defaultState, action) => {
 					...orderThreeTasks,
 					...orderFourTasks,
 				],
+			};
+		case constants.SET_TASKS:
+			return {
+				...state,
+				tasks: action.tasks,
 			};
 		default:
 			return state;

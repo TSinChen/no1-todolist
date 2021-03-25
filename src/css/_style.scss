@@ -1,5 +1,7 @@
 .container {
 	background: #e1e1e1;
-	width: 1024px;
+	width: 100%;
+	max-width: 1024px;
+	min-width: 375px;
 	margin: 50px auto;
 }

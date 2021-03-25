@@ -11,3 +11,4 @@ export const EDIT_TASK_DETAIL = 'EDIT_TASK_DETAIL';
 export const SAVE_EDIT_TASK = 'SAVE_EDIT_TASK';
 export const CHANGE_TASK_CHECK = 'CHANGE_TASK_CHECK';
 export const ORDER_TASK = 'ORDER_TASK';
+export const SET_TASKS = 'SET_TASKS';

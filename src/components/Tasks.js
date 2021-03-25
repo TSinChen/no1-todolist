@@ -10,6 +10,7 @@ import {
 	saveEditTask,
 	changeTaskCheck,
 	orderTasks,
+	setTasks,
 } from '../store/actionCreators';
 
 import AddTask from './AddTask';
@@ -18,6 +19,15 @@ import AddTaskOpen from './AddTaskOpen';
 class Tasks extends React.Component {
 	componentDidMount() {
 		this.props.orderTasks();
+		if (localStorage.tasks) {
+			this.props.setTasks(JSON.parse(localStorage.getItem('tasks')));
+		} else {
+			localStorage.setItem('tasks', JSON.stringify(this.props.tasks));
+		}
+	}
+
+	componentDidUpdate() {
+		localStorage.setItem('tasks', JSON.stringify(this.props.tasks));
 	}
 
 	renderTitle(task) {
@@ -103,17 +113,6 @@ class Tasks extends React.Component {
 									)
 								}
 							/>
-						</div>
-					</div>
-					<div className="task-detail-item">
-						<div className="task-detail-title">
-							<div className="detail-title-icon">
-								<i className="far fa-file"></i>
-							</div>
-							<label htmlFor="file">File</label>
-						</div>
-						<div className="task-detail-form">
-							<input type="file" id="file" />
 						</div>
 					</div>
 					<div className="task-detail-item">
@@ -354,4 +353,5 @@ export default connect(mapState, {
 	saveEditTask,
 	changeTaskCheck,
 	orderTasks,
+	setTasks,
 })(Tasks);

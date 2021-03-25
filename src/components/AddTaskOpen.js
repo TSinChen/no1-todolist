@@ -70,31 +70,6 @@ class AddTaskOpen extends React.Component {
 						<div className="task-detail-item">
 							<div className="task-detail-title">
 								<div className="detail-title-icon">
-									<i className="far fa-file"></i>
-								</div>
-								<label
-									htmlFor="file"
-									onClick={() =>
-										alert('檔案上傳功能開發中！')
-									}
-								>
-									File
-								</label>
-							</div>
-							<div className="task-detail-form">
-								<input
-									type="file"
-									id="file"
-									disabled
-									onClick={() =>
-										alert('檔案上傳功能開發中！')
-									}
-								/>
-							</div>
-						</div>
-						<div className="task-detail-item">
-							<div className="task-detail-title">
-								<div className="detail-title-icon">
 									<i className="far fa-comment-dots"></i>
 								</div>
 								<label htmlFor="textarea">Comment</label>
